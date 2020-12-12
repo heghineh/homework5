@@ -11,14 +11,18 @@ package com.company;
 
 import java.util.Scanner;
 
-public class problem5_10 {
+public class Main {
     static Scanner scanner = new Scanner(System.in);
+    static int perimeter;
 
     public static void main(String[] args) {
         System.out.println("Please enter three numbers: ");
         int[] sides = getNumbersFromConsole();
         if (checkTriangleExistence(sides)) {
             System.out.println("The triangle is valid.");
+            perimeter = calculateTrianglePerimeter(sides);
+            System.out.println("Perimeter: " + perimeter);
+            System.out.println("Area: " + calculateTriangleArea(sides));
         } else {
             System.out.println("The triangle is invalid.");
         }
@@ -33,6 +37,12 @@ public class problem5_10 {
     public static int calculateTrianglePerimeter(int[] array) {
         int perimeter = array[0] + array[1] + array[2];
         return perimeter;
+    }
+
+    public static double calculateTriangleArea(int[] array) {
+        double p = perimeter / 2;
+        double area = Math.pow(p * (p - array[0]) * (p - array[1]) * (p - array[2]), 0.5);
+        return area;
     }
 
     public static int[] getNumbersFromConsole() {
