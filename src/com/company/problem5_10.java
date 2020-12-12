@@ -1,3 +1,12 @@
+//get sides of the triangle
+//        write a function to check if the triangle with those sides is a valid triangle
+//        write a function to calculate the perimeter of the triangle
+//        write a function to calculate the area of the triangle
+//        in case the triangle is valid
+//        - calculate perimeter
+//        - calculate area
+//        print both
+
 package com.company;
 
 import java.util.Scanner;
@@ -6,7 +15,7 @@ public class problem5_10 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Please enter your numbers: ");
+        System.out.println("Please enter three numbers: ");
         int[] sides = getNumbersFromConsole();
         if (checkTriangleExistence(sides)) {
             System.out.println("The triangle is valid.");

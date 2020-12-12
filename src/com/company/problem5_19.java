@@ -3,6 +3,7 @@
 //        Write a function to rotate that matrix 90*
 //        Write a function to rotate that matrix 180*
 //        Write a function to rotate that matrix 270
+
 package com.company;
 
 import java.util.Random;
@@ -13,7 +14,7 @@ public class problem5_19 {
     public static void main(String[] args) {
         System.out.print("Enter the number: ");
         int[][] matrix = initializeMatrix(inputNumberFromConsole());
-        System.out.println("Here is your matrix");
+        System.out.println("Here is your matrix:");
         printMatrix(matrix);
         System.out.println("\nRotated 90*");
         rotateTo90(matrix);

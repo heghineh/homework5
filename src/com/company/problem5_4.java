@@ -1,3 +1,7 @@
+//get 3 numbers from console
+//        write a function to find the smallest number among the three numbers.
+//        print the smallest number
+
 package com.company;
 
 import java.util.Scanner;

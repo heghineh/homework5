@@ -1,12 +1,21 @@
+//get the password from console (String)
+//        write a function to check whether a string is a valid password or not
+//        Password rules:
+//        -- A password must have at least ten characters.
+//        -- A password consists of only letters and digits.
+//        -- A password must contain at least two digits.
+//        print isValid or not;
+
 package com.company;
 
 import java.util.Scanner;
 
 public class problem5_8 {
-    static String passwordCheck = getPasswordFromConsole();
+    static String passwordCheck;
 
     public static void main(String[] args) {
-
+        System.out.println("Enter your password.");
+        passwordCheck = getPasswordFromConsole();
         if (isValid(passwordCheck)) {
             System.out.println("Your password is valid.");
         } else {

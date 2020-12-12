@@ -1,29 +1,35 @@
+//initialize an array [10] with random numbers
+//write a function that takes as an argument an array and returns the array sorted in asc order
+//print
+
 package com.company;
 
 import java.util.Random;
 
 public class problem5_12 {
-    public static void main(String[] args) {
-        int array[] = initializeTheArray();
-        printTheArray(initializeTheArray());
-        System.out.println();
 
+    public static void main(String[] args) {
+        int[] array = new int[10];
+        System.out.println("Here is your array:");
+        int[] initArray = initializeArray(array);
+        printArray(initArray);
+        System.out.println("\n\nHere is the array sorted in asc order:");
+        printArray(sortToAsc(initArray));
     }
 
-    public static int[] initializeTheArray() {
+    public static int[] initializeArray(int[] array) {
         Random random = new Random();
-        int[] array = new int[10];
+
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(100);
         }
         return array;
     }
 
-    public static int[] sortInAscOrder(int[] array) {
-        int min = array[0];
+    public static int[] sortToAsc(int[] array) {
         int helper = 0;
         for (int i = 0; i < array.length; i++) {
-            for (int j = i+1; j < array.length; j++) {
+            for (int j = i + 1; j < array.length; j++) {
                 if (array[i] > array[j]) {
                     helper = array[i];
                     array[i] = array[j];
@@ -34,9 +40,9 @@ public class problem5_12 {
         return array;
     }
 
-    public static void printTheArray(int[] array) {
+    public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+            System.out.print(array[i] + ", ");
         }
     }
 }

@@ -1,3 +1,8 @@
+//get 2 numbers from console
+//        write a function to calculate their product
+//        write a function to calculate cube of the product
+//        print the cube of the product
+
 package com.company;
 
 import java.util.Scanner;

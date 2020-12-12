@@ -1,8 +1,13 @@
+//get radius from console
+//        write a function to calculate the area of the circle
+//        write a function to calculate the perimeter of the circle
+
 package com.company;
 
 import java.util.Scanner;
 
 public class problem5_9 {
+
     public static void main(String[] args) {
         System.out.print("Enter the radius of the circle: ");
         double radius = getRadiusFromConsole();

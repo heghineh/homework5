@@ -1,3 +1,7 @@
+//get 2 random numbers from console
+//        write a function to calculate their product
+//        print the product
+
 package com.company;
 
 import java.util.Scanner;
@@ -8,7 +12,7 @@ public class problem5_2 {
     public static void main(String[] args) {
         System.out.println("Please enter your numbers: ");
         int product = calculateTheProduct(getNumbersFromConsole());
-        System.out.println(product);
+        System.out.println("Product is " + product);
     }
 
     public static int calculateTheProduct(int[] array) {

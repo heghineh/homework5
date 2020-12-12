@@ -1,3 +1,6 @@
+//get a string from console
+//        write a function to display the middle character of a string.
+
 package com.company;
 
 import java.util.Scanner;
